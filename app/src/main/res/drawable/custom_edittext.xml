@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Fondo transparente para evitar que el tema lo tiña -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Borde neón o morado -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/borde" />
+
+    <!-- Bordes redondeados -->
+    <corners android:radius="30dp" />
+
+</shape>

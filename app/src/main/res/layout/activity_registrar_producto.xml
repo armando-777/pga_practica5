@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".app.RegistrarProductoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="@drawable/combined_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nuevo Producto"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/teal_200"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/teal_200"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/ivProducto"
+                    android:layout_width="220dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnSeleccionarImagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar Perfil"
+                    android:textColor="@color/teal_200"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/purple"
+                    app:cornerRadius="10dp"
+                    android:layout_marginBottom="15dp"
+                    app:strokeColor="@color/blue_border"
+                    app:strokeWidth="2dp"/>
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nombre del producto"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/ladoA"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Lado A (mm)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/ladoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Lado B (mm)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/ladoC"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Lado C (mm)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/ladoD"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Lado D (mm)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/etPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Precio (Bs.)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/etStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Stock"
+                    android:inputType="number"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="20dp"/>
+
+                <EditText
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Descripción"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"
+                    android:gravity="top"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    android:layout_marginBottom="15dp"/>
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="CREAR PRODUCTO"
+                    android:textColor="@color/teal_200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/purple"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="@color/blue_border"
+                    app:strokeWidth="2dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+
