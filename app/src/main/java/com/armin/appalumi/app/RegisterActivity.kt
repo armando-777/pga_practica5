@@ -91,6 +91,7 @@ class RegisterActivity : AppCompatActivity() {
                         Toast.makeText(this@RegisterActivity, message, Toast.LENGTH_LONG).show()
                     }
 
+
                 } else {
                     Toast.makeText(this@RegisterActivity, "Error en la conexión con el servidor", Toast.LENGTH_LONG).show()
                 }
