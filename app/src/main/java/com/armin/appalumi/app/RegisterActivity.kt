@@ -100,6 +100,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
 
+    
     private fun limpiarFormulario() {
         binding.registerUsername.text?.clear()
         binding.registerLastName.text?.clear()

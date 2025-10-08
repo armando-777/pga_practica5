@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".app.RegistrarProductoActivity">
+    tools:context=".app.EditarProductoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nuevo Producto"
+                    android:text="Editar Producto"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:textColor="@color/teal_200"
@@ -48,29 +48,22 @@
                     android:gravity="center"
                     android:layout_marginBottom="20dp"/>
 
-                <ImageView
-                    android:id="@+id/ivProducto"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/custom_edittext"
-                    android:contentDescription="Imagen del producto" />
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_edittext">
 
-                <Button
-                    android:id="@+id/btnSeleccionarImagen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Seleccionar Perfil"
-                    android:textColor="@color/teal_200"
-                    android:textSize="14sp"
-                    android:backgroundTint="@color/purple"
-                    app:cornerRadius="10dp"
-                    android:layout_marginBottom="15dp"
-                    app:strokeColor="@color/blue_border"
-                    app:strokeWidth="2dp"/>
+                    <ImageView
+                        android:id="@+id/ivProducto"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="fitCenter"
+                        android:padding="12dp"/>
+
+                </FrameLayout>
 
                 <EditText
                     android:id="@+id/etNombre"
@@ -167,18 +160,41 @@
                     android:textColorHint="@color/teal_200"
                     android:layout_marginBottom="15dp"/>
 
-                <Button
-                    android:id="@+id/btnRegistrar"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:text="CREAR PRODUCTO"
-                    android:textColor="@color/teal_200"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="@color/purple"
-                    app:cornerRadius="15dp"
-                    app:strokeColor="@color/blue_border"
-                    app:strokeWidth="2dp"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnEliminar"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="ELIMINAR"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        app:cornerRadius="15dp"/>
+
+                    <Button
+                        android:id="@+id/btnActualizar"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="ACTUALIZAR"
+                        android:textColor="@color/teal_200"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/purple"
+                        app:cornerRadius="15dp"
+                        app:strokeColor="@color/blue_border"
+                        app:strokeWidth="2dp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -186,4 +202,3 @@
 
     </LinearLayout>
 </ScrollView>
-
